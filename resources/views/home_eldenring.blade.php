@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/2a4935d0f4.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+       <!--NAV-->
+       <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand mr-auto navhover2" href="home.blade.php"><img src="img/logoMW.svg"></a>
+            <button class="navbar-toggler bg-light" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item navhover"><a class="nav-link" href="home_berserk.blade.php"><img style="margin:15px" src="navimg/berserklogo.png" width="50px"></a></li>
+                    <li class="nav-item navhover"><a class="nav-link" href="home_esdla.blade.php"><img style="margin:15px" src="navimg/esdlalogo.png" width="50px"></a></li>
+                    <li class="nav-item navhover"><a class="nav-link" href="home_eldenring.blade.php"><img style="margin:15px" src="navimg/eldenringlogo.png" width="50px"></a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item navhover2"><a class="nav-link" href="contacta.blade.php"><img src="navimg/contactlogo.svg" width="80px"></a></li>
+                <li class="nav-item navhover2"><a class="nav-link" href="login.blade.php"><img src="navimg/loginsignin_logo.svg" width="110px"></a></li>
+                <li class="nav-item navhover2"><a class="nav-link" href="perfil.blade.php"><img src="navimg/perfil_logo.svg" width="50px"></a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <!--SEPARADOR-->
+<div id="separator" class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+    <div class="content"></div>
+</div>
+    <!--HEADER-->
+  <section class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+    <header>
+      <div class="banner-text">
+        <div class="row justify-content-md-center text-area">
+          <img src="IMAGES_ELDEN/title_ELDEN.png" style="width: 900px;">&nbsp;
+        </div>
+      </div>
+    </header>
+  </section>
+      <!--SEPARADOR-->
+<div id="separator" class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+  <div class="content"></div>
+</div>
+    <!--NOTICIAS DESTACADAS-->
+    <div class="prueba" id="destacadas" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+      <div class="container-md p-5">
+        
+        <div class="row pt-5" id="TITLES_ELD">
+            <h3 class="text-center pb-5 pt-5 h1">NOTICIAS</h3>
+        </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="noticias/elden/n1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Elden Ring ya ha vendido más 13 millones de unidades</h5>
+                  <p class="card-text">La editora japonesa anuncia en su informe de resultados financieros que el RPG de acción de FromSoftware ha distribuido 13,4 millones de copias antes de abril.</p>
+                  <a href="noticiaelden1.blade.php" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="noticias/elden/N2.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Se convierten en Frodo y Sam en Elden Ring</h5>
+                  <p class="card-text">Un vídeo de TikTok que se ha viralizado en redes sociales muestra a dos Sinluz caracterizados como Frodo y Sam recorriendo paisajes de las Tierras Intermedias.</p>
+                  <a href="noticiaelden2.blade.php" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="noticias/elden/n3.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Consiguen hacer funcionar el coliseo secreto y apuntan a un posible DLC</h5>
+                  <p class="card-text">Un 'dataminer' ha conseguido entrar en el coliseo secreto y encontró un lugar de Gracia. Podrían ser pistas de un posible DLC ambientado en el pasado.</p>
+                  <a href="noticiaelden3.blade.php" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+          <div class="card w-100 card-border mb-5">
+              <img src="noticias/elden/n4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Elden Ring supera a CoD Vanguard en EE.UU. como el más vendido del último año</h5>
+                <p class="card-text">El RPG de acción de FromSoftware es el juego más vendido en Estados Unidos en los últimos doce meses, mientras que LEGO Star Wars: The Skywalker Saga es el quinto.</p>
+                <a href="noticiaelden4.blade.php" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm">
+          <div class="card w-100 card-border mb-5">
+              <img src="noticias/elden/n6.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Elden Ring tendrá versión para Game Boy completamente funcional</h5>
+                <p class="card-text">Hay un fan de Elden Ring que está desarrollando una versión jugable de la obra de FromSoftware para Game Boy. Podéis verlo en acción en un vídeo que él mismo ha compartido.
+                </p>
+                <a href="noticiaelden6.blade.php" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm">
+          <div class="card w-100 card-border mb-5">
+              <img src="noticias/elden/n7.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Elden Ring: Juega como Link Oscuro, Harry Potter, Darth Vader o Darth Maul gracias a los mods</h5>
+                <p class="card-text">La comunidad de 'modders' de Elden Ring presenta una serie de nuevas apariencias para nuestros personajes, que incluyen la versión oscura de Link, los dos Sith y Harry Potter.</p>
+                <a href="noticiaelden7.blade.php" class="btn btn-primary">Leer más</a>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="col-sm">
+          <div class="card w-100 card-border mb-5">
+              <img src="noticias/elden/n8.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Así es Elden Ring en primera persona para realidad virtual gracias a un mod</h5>
+                <p class="card-text">Un mod convierte Elden Ring en un juego de VR en primera persona. El autor ha mostrado un pequeño clip de su creación, que actualmente está en desarrollo.</p>
+                <a href="noticiaelden8.blade.php" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm">
+          <div class="card w-100 card-border mb-5">
+              <img src="noticias/elden/n9.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Elden Ring: Un jugador se topa por sorpresa con Jesucristo y Satanás y sucede esto</h5>
+                <p class="card-text">Un jugador de Elden Ring invade una partida y se topa con la sorpresa de que dos usuarios caracterizados como Jesús y Satanás le reciben en son de paz (o eso es lo que cree).</p>
+                <a href="noticiaelden9.blade.php" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm">
+          <div class="card w-100 card-border mb-5">
+              <img src="IMAGES_ELDEN/BIG_ANIMATION.gif" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Elden Ring recibe un nuevo parche que nerfea a Malenia, la Espada de Miquella</h5>
+                <p class="card-text">El título de FromSoftware se actualiza a la versión 1.04.2 para introducir algunas correcciones menores y corregir un error por el que Malenia restauraba PS sin tocar al jugador.</p>
+                <a href="noticiaelden5.blade.php" class="btn btn-primary">Leer más</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+    
+    <!--CURIOSIDADES-->
+    <div class="prueba" id="destacadas" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+      <div class="container-md p-5">
+        
+        <div class="row pt-5" id="TITLES_ELD">
+            <h3 class="text-center pb-5 pt-5 h1">QUIZÁ TE PUEDA INTERESAR...</h3>
+        </div>
+    <div>
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="noticias/elden/c1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">¡Únete a la comunidad Elden Ring!</h5>
+                  <p class="card-text">¡Álzate, Sin Luz! Únete a nuestro canal de Discord donde podrás disfrutar de la comunidad para diversas actividades</p>
+                  <a href="elden_comunidad.blade.php" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="IMAGES_ELDEN/BIG_ANIMATION2.GIF" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Se detecta drift en el DualSense de PS5</h5>
+                  <p class="card-text">¿Te has comprado una flamante PlayStation 5, pero ves como el personaje va solo? No te preocupes, no es por tu culpa.</p>
+                  <a href="noticiadestacada2.blade.php" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="IMAGES_ELDEN/ELDEN_MONSTER.gif" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Lo último sobre Nintendo Switch Pro</h5>
+                  <p class="card-text">Tras muchísimos rumores, falsas esperanzas, y una vorágine de rumorología sin fuente fiable, ahora parece que sí tenemos ante nosotros los primeros detalles de la que sería la segunda generación de Nintendo Switch</p>
+                  <a href="noticiadestacada3.htblade.phpml" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!--GALLERY-->
+<div class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+  <div class="container-md p-5 gallery">
+    <div class="row pt-5 video-gallery 2" id="TITLES_ESDLA">
+        <h1 class="text-center pb-5 pt-5 boxed">GALERÍA</h1>
+        <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="gallery/eldenring/1.jpg" alt="" class="d-block w-100">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3 class="animated zoomIn" style="animation-delay: 1s">"Godfrey, El Primer Señor"</h3>
+                      <h5 class="animated fadeInLeft" style="animation-delay: 3s">No provoquéis el conocer a Hoarax Loux</h5>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="gallery/eldenring/2.jpg" alt="" class="d-block w-100">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3 class="animated zoomIn" style="animation-delay: 1s">"Malenia, La Espada de Miquella"</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="gallery/eldenring/3.jpg" alt="" class="d-block w-100">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3 class="animated zoomIn" style="animation-delay: 1s">"El Necrolimbo"</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="gallery/eldenring/4.jpg" alt="" class="d-block w-100">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3 class="animated zoomIn" style="animation-delay: 1s">"El Grán Árbo Áureo"</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="gallery/eldenring/5.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="animated zoomIn" style="animation-delay: 1s">"Ranni, La Princesa Lunar"</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="gallery/eldenring/6.jpg" alt="" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3 class="animated zoomIn" style="animation-delay: 1s">"Reina Márika"</h3>
+              </div>
+          </div>
+          </div>
+      </div>   
+    </div>
+  </div>
+</div>
+<!--NEWSLETTER-->
+<!--Footer-->
+<section class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+  <div id="footer" class="p-5">
+      <div class="container card card-border2 w-100 pt-5">
+        <div class="row row-cols-md-2 justify-content-md-center">
+          <div class="col text-center">
+            <h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
+          </div>
+        </div>
+        <div class="row justify-content-md-center py-5">
+          <div class="col text-center font-weight-light">
+            <p>¿Aún no te hemos BOMBARDEADO con información? Suscribete a nuestra newsletter y recibe todas las noticias antes que nadie sobre el mundo medieval</p>
+            <p><input type="text" name="email" style="width: 30%; padding: 5px 5px" placeholder="introduce tu correo. Ejemplo: jacinto@gmail.com"></p>
+            <p><button class="btn btn-lg rounded-pill btn-primary w-20  p-3 shadow-sm font-weight-bold">Let's go!</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        <!--SEPARADOR-->
+        <section class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
+        <div id="separator">
+          <div class="content"></div>
+        </div>
+        </section>
+    <!--Footer-->
+  <div id="footer" class="p-5">
+    <div class="container w-50 pt-5">
+      <div class="row row-cols-md-2 justify-content-md-center">
+        <div class="col text-center">
+        </div>
+      </div>
+      <div class="row justify-content-md-center py-5">
+        <div class="col text-center font-weight-light">
+          <p>Es necesario disponer de conexión a internet para contactar con nuestro equipo. Para más información, escíbenos a <a href="mailto:info@medievalworld.es" class="mailto"><b>info@medievalworld.es</b></a></p>
+          <p>Todos los productos se venden por separado. Para más información contacta con el vendedor. Visita pccomponentes.es para detalles específicos del producto.</p>
+          <p>© 1997 - 2022 Medieval World. Medieval World properties are trademarks of Medieval World.</p>
+        </div>
+        
+      </div>
+      <div class="row"></div>
+      <a href="contacta.blade.php">
+        <button class="btn btn-lg rounded-pill btn-primary w-100  p-3 shadow-sm font-weight-bold">¡Contáctanos!</button>
+      </a>
+    </div>
+  </div>
+  
+  
+
+</body>
+
+</html>

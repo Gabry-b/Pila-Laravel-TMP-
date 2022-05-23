@@ -1,0 +1,221 @@
+/*OVERFUCK*/
+html, body 
+{ 
+ height: 100%;
+ overflow-x: hidden;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color: black;
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.navhover:hover{
+    transition: transform 125ms;
+    transform: translateY(-10px);
+    transition: all ease-out 0.2s;
+}
+.navhover2:hover{
+    transition: transform 125ms;
+    transform: translateY(-10px);
+    transition: all ease-out 0.2s;
+}
+
+/*BACKGROUND*/
+.prueba{
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header{
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: 'Rubik Wet';
+    src: url(RubikWetPaint-Regular.ttf);
+}
+@font-face {
+    font-family: 'Medieval';
+    src: url(MedievalSharp-Regular.ttf);
+}
+@font-face {
+    font-family: 'Medieval2';
+    src: url(Aclonica-Regular.ttf);
+}
+.latipografia{
+    font-family: 'Poppins', sans-serif;
+}
+#TITLES_ELD { 
+    font-family:'Medieval2';
+    color: bisque;
+    text-shadow: 5px 2px #000;
+}
+#TITLES_BRSK { 
+    font-family:'Medieval2';
+    color: rgb(221, 13, 13);
+    text-shadow: 5px 2px #000;
+}
+#TITLES_ESDLA { 
+    font-family:'Medieval2';
+    color: rgb(216, 199, 51);
+    text-shadow: 5px 2px #000;
+}
+#TITLES_HOME { 
+    font-family:'Medieval2';
+    color: rgb(255, 255, 255);
+}
+
+/*CARDS*/
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+.cardredactado{
+    background-color: red;
+}
+
+/*PRODUCTOS*/
+.producto{
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+.producto:hover{
+    transform: scale(1.05);
+}
+.producto-name{
+    background-color: rgba(0,0,0,0.4);
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/*NEWSLETTER*/
+.card-border2{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+/*FOOTER*/
+.footer-style-3 .footer-widget .footer-link li a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+ }
+
+/*SEPARADORES*/
+#separator .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/*OTHERTHINGS*/
+#videosnoticias{
+    align-items: center;
+    align-content: center;
+}
+.personas{
+    width: 300px;
+}
+.btn{
+    background-color: black;  
+}
+.mailto {
+    color: #000;
+}
+
+/*ANIMACIONES TITULOS*/
+.text-area{
+    opacity: 0;
+    transform: translate(0, -100px) forwards(360deg) scale(0);
+    animation: animate 5s forwards;
+    text-align: center;
+}
+.text-area:nth-of-type(2){
+    animation-delay: .1s;
+}
+.text-area:nth-of-type(3){
+    animation-delay: .2s;
+}
+.text-area:nth-of-type(4){
+    animation-delay: .3s;
+}
+@keyframes animate{
+    30%{
+        transform: translate(0, -50px) forwards(180deg) scale(1);
+    }
+    60%{
+        transform: translate(0, 20px) forwards(0deg) scale(0.8);
+    }
+    100%{
+        transform: translate(0) forwards(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/*ANIMACIONES VARIAS*/
+@keyframes moveRight{
+    100%{transform:translateX(1000px)}
+}
+.GUTS{
+    position: absolute;
+    bottom: 8%;
+    animation: moveRight 6s linear infinite;
+}
+
+/*DISCORD BTN*/
+
+.button-join {
+    width: 90%;
+    max-width: 18.75rem;
+    height: 2.5rem;
+    font-size: 1.2em;
+    opacity: .8;
+}
+.buttondisc.is-discord {
+    color: #fff;
+    background: #5865f2;
+    border-color: transparent;
+}
+.buttondisc {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #ccc;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    font-family: Medieval2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
