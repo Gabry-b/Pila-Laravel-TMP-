@@ -4,6 +4,7 @@ use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ContactaController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\MailController;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -213,7 +214,14 @@ Route::get('/perfil.blade.php', function () {
     return view('perfil');
 });
 
+Route::get('/index', function () {
+    return view ('perfil.index');
+});
 
+
+Route::resource('perfil', PerfilController::class);
+
+Route::get('/index', [PerfilController::class, 'index']);
 
 Route::post('/perfil', [PerfilController::class, 'crear'])->name('perfil.crear');
 

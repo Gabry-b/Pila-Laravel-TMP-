@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Perfil;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PerfilController extends Controller
 {
@@ -12,11 +13,19 @@ class PerfilController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function perfil()
+    public function index(Request $request)
     {
         //
+        if ($request) {
+            $searchText = trim((string)$request->get('searchText'));
+            $perfils = DB::table('perfils as u')
+            ->select('u.biografia', 'u.direccioN','u.telefono', 'u.interesadoen', 'u.fecha_nacimiento', 'u.imagen_fondo', 'u.imagen_perfil')
+            ->paginate(6);
+    
+            return view('perfil.index', compact('perfils','searchText'));
         
        
+    }
     }
 
     /**
@@ -52,6 +61,7 @@ class PerfilController extends Controller
     public function show(Perfil $perfil)
     {
         //
+        
     }
 
     /**
@@ -88,18 +98,25 @@ class PerfilController extends Controller
         //
     }
 
-    public function detalle($id){
-        $nota = App\Perfil::findorfail($id);
-
-        return view('perfil', compact('perfils'));
-    }
 
     public function crear(Request $request){
         $datosPerfil = request()->except('_token');
+
+        if($request->hasFile('imagen_perfil')){
+            $datosPerfil['imagen_perfil']=$request->file('imagen_perfil')->store('img','public');
+        }
+        if($request->hasFile('imagen_fondo')){
+            $datosPerfil['imagen_fondo']=$request->file('imagen_fondo')->store('img','public');
+        }
         Perfil::insert($datosPerfil); 
+
+        return view('/index');
+
         
         
         
         
     }
+
+    
 }
