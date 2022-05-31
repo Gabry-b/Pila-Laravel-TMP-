@@ -12,10 +12,11 @@ class PerfilController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function perfil()
     {
         //
-        return view('perfil');
+        
+       
     }
 
     /**
@@ -39,7 +40,6 @@ class PerfilController extends Controller
     public function store(Request $request)
     {
         //
-        
         
     }
 
@@ -95,8 +95,10 @@ class PerfilController extends Controller
     }
 
     public function crear(Request $request){
-         return $request->all();
-       
+        $datosPerfil = request()->except('_token');
+        Perfil::insert($datosPerfil); 
+        
+        
         
         
     }

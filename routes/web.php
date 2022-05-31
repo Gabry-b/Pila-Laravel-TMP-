@@ -1,9 +1,9 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ContactaController;
 use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +15,6 @@ use App\Http\Controllers\PerfilController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('home');
 });
@@ -210,9 +209,12 @@ Route::post('/newsletter', [NewsletterController::class, 'crear'])->name('newsle
 
 Route::post('/contacta', [ContactaController::class, 'crear'])->name('contacta.crear');
 
-
 Route::get('/perfil.blade.php', function () {
     return view('perfil');
 });
 
+
+
 Route::post('/perfil', [PerfilController::class, 'crear'])->name('perfil.crear');
+
+Route::get('/send-email', [MailController::class, 'sendEmail']);

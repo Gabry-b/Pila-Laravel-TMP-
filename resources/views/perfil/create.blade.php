@@ -51,7 +51,6 @@
     @auth   
     <section class="seccion-perfil-usuario">
         <form  action="{{ route('perfil.crear') }}"  method="post" enctype="multipart/form-data">
-        @csrf
             <div class="perfil-usuario-header">
                 <div class="perfil-usuario-portada">
                     <div class="perfil-usuario-avatar">
@@ -79,7 +78,6 @@
                     <ul class="lista-datos">
                         <li><i class="icono fas fa-map-marker-alt"></i><input type="text" name="interesadoen" id="interesadoen" style="width: 100%; padding: 5px 5px" placeholder="Interesado en:"></li>
                         <li><i class="icono fas fa-calendar-alt"></i><input type="date" name="fecha_nacimiento" id="fecha_nacimiento" style="width: 80%; padding: 5px 5px" placeholder="Fecha de nacimiento"></li>
-                        <input type="submit" value="Enviar">
                     </ul>
                 </div>
                 <div class="redes-sociales">
@@ -87,6 +85,7 @@
                     <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
                 </div>
             </div>
+            <input type="submit" value="Enviar"></input>
         </form>
     @endauth
     </section>
