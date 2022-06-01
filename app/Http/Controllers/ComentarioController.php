@@ -82,4 +82,20 @@ class ComentarioController extends Controller
     {
         //
     }
+    public function detalle($id){
+        $nota = App\Comentario::findorfail($id);
+
+        return view('/', compact('comentarios'));
+    }
+    public function crear(Request $request){
+        $datoscoment = request()->except('_token');
+        Comentario::insert($datoscoment);
+
+        return back();
+
+        
+        
+        
+        
+    }
 }

@@ -41,13 +41,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item navhover2"><a class="nav-link" href="contacta.blade.php"><img src="navimg/contactlogo.svg" width="80px"></a></li>
             <li class="nav-item navhover2"><a class="nav-link" href="login.blade.php"><img src="navimg/loginsignin_logo.svg" width="110px"></a></li>
-            @auth
             <li class="nav-item navhover2"><a class="nav-link" href="perfil.blade.php"><img src="navimg/perfil_logo.svg" width="50px"></a></li>
-            <form class="nav-item navhover2" style="display: inline; margin-top: 10px;" action="/logout" method="POST">
-                @csrf
-                <a style="color: white; underline: no; text-decoration: none; font-size: large" href="#" onclick="this.closest('form').submit()"
-                >Logout</a>
-            @endauth
           </ul>
         </div>
     </div>
@@ -108,19 +102,26 @@
 </div>
 <!--NEWSLETTER-->
 <!--Footer-->
+@auth
 <section class="prueba" style="background-image: url('IMAGES_GUTS/background.jpg');">
   <div id="footer" class="p-5">
       <div class="container card card-border2 w-100 pt-5">
         <div class="row row-cols-md-2 justify-content-md-center">
           <div class="col text-center">
-            <h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
+            <h2>DEJANOS TU COMENTARIO</h2>
           </div>
         </div>
         <div class="row justify-content-md-center py-5">
           <div class="col text-center font-weight-light">
-            <p>¿Aún no te hemos BOMBARDEADO con información? Suscribete a nuestra newsletter y recibe todas las noticias antes que nadie sobre el mundo medieval</p>
-            <p><input type="text" name="email" style="width: 30%; padding: 5px 5px" placeholder="introduce tu correo. Ejemplo: jacinto@gmail.com"></p>
-            <p><button class="btn btn-lg rounded-pill btn-primary w-20  p-3 shadow-sm font-weight-bold">Let's go!</button></p>
+            <form id="form" action="{{ route('comentario.crear') }}"  method="post" enctype="multipart/form-data">
+              @csrf
+              <h3 class="titulo">{{auth()->user()->name ?? auth()->user()->name}}</h3>
+              <p style="margin-top:30px;">Comenta tu opinión al respecto</p>
+
+              <p><input type="text" name="mensaje" id="mensaje" style="width: 30%; padding: 5px 5px" placeholder="Comenta aquí y dejanos tu nombre"></p>
+            <p><button class="btn btn-lg rounded-pill btn-primary w-20  p-3 shadow-sm font-weight-bold">Comentar</button></p>
+            </form>
+            @endauth
           </div>
         </div>
       </div>
@@ -145,12 +146,6 @@
             <p>Todos los productos se venden por separado. Para más información contacta con el vendedor. Visita pccomponentes.es para detalles específicos del producto.</p>
             <p>© 1997 - 2022 Medieval World. Medieval World properties are trademarks of Medieval World.</p>
           </div>
-          @auth
-          <form action="/comentario" method="POST">
-            <h3 class="titulo">{{auth()->user()->name ?? auth()->user()->name}}</h3>
-            <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje">
-          </form>
-          @endauth
         </div>
         <div class="row"></div>
         <a href="contacta.blade.php">

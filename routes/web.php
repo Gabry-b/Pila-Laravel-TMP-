@@ -4,6 +4,7 @@ use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ContactaController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ComentarioController;
 use Illuminate\Support\Facades\DB;
 
 /*
@@ -218,6 +219,10 @@ Route::get('/index', function () {
     return view ('perfil.index');
 });
 
+Route::get('/perfil', function () {
+    return view ('perfil.index');
+});
+
 
 Route::resource('perfil', PerfilController::class);
 
@@ -225,4 +230,6 @@ Route::get('/index', [PerfilController::class, 'index']);
 
 Route::post('/perfil', [PerfilController::class, 'crear'])->name('perfil.crear');
 
-Route::get('/send-email', [MailController::class, 'sendEmail']);
+Route::get('/send-email', [MailController::class, 'sendEmail'])->name('send-email');
+
+Route::post('/comentario', [ComentarioController::class, 'crear'])->name('comentario.crear');

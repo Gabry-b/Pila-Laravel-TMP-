@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\newsletter;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
+use Redirect;
 
 class NewsletterController extends Controller
 {
@@ -96,7 +98,7 @@ class NewsletterController extends Controller
         $datosnews = request()->except('_token');
         Newsletter::insert($datosnews);
 
-        return back();
+        return Redirect::to('/send-email');
         
         
     }

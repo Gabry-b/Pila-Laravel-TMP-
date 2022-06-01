@@ -17,8 +17,6 @@
     <script src="https://kit.fontawesome.com/2a4935d0f4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
-
-
 <!--NAV-->
 <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eleventh navbar example">
     <div class="container-fluid">
@@ -42,7 +40,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item navhover2"><a class="nav-link" href="contacta.blade.php"><img src="navimg/contactlogo.svg" width="80px"></a></li>
             <li class="nav-item navhover2"><a class="nav-link" href="login.blade.php"><img src="navimg/loginsignin_logo.svg" width="110px"></a></li>
-            <li class="nav-item navhover2"><a class="nav-link" href="perfil.blade.php"><img src="navimg/perfil_logo.svg" width="50px"></a></li>
+            <li class="nav-item navhover2"><a class="nav-link" href="perfil.blade.php"><img src="navimg/perfil_logo.svg" width="50px"></a></li>  
           </ul>
         </div>
     </div>
@@ -79,7 +77,6 @@
                     <ul class="lista-datos">
                         <li><i class="icono fas fa-map-marker-alt"></i><input type="text" name="interesadoen" id="interesadoen" style="width: 100%; padding: 5px 5px" placeholder="Interesado en:"></li>
                         <li><i class="icono fas fa-calendar-alt"></i><input type="date" name="fecha_nacimiento" id="fecha_nacimiento" style="width: 80%; padding: 5px 5px" placeholder="Fecha de nacimiento"></li>
-                        <input type="submit" value="Enviar">
                     </ul>
                 </div>
                 <div class="redes-sociales">
@@ -87,6 +84,7 @@
                     <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
                 </div>
             </div>
+            <p><button type="submit" class="btn btn-lg rounded-pill btn-primary w-20  p-3 shadow-sm font-weight-bold" href="/perfil.index">Enviar!</button></p>
         </form>
     @endauth
     </section>

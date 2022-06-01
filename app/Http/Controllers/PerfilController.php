@@ -20,6 +20,7 @@ class PerfilController extends Controller
             $searchText = trim((string)$request->get('searchText'));
             $perfils = DB::table('perfils as u')
             ->select('u.biografia', 'u.direccioN','u.telefono', 'u.interesadoen', 'u.fecha_nacimiento', 'u.imagen_fondo', 'u.imagen_perfil')
+            ->where('u.biografia','LIKE','%hasd%')
             ->paginate(6);
     
             return view('perfil.index', compact('perfils','searchText'));
@@ -110,7 +111,7 @@ class PerfilController extends Controller
         }
         Perfil::insert($datosPerfil); 
 
-        return view('/index');
+        
 
         
         
