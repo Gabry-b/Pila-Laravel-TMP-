@@ -39,12 +39,28 @@ Route::get('/berserk_comunidad.blade.php', function () {
     return view('berserk_comunidad');
 });
 
+Route::get('/berserk_productos.blade.php', function () {
+    return view('berserk_productos');
+});
+
 Route::get('/contacta.blade.php', function () {
     return view('contacta');
 });
 
+Route::get('/confirm.blade.php', function () {
+    return view('confirm');
+});
+
 Route::get('/elden_comunidad.blade.php', function () {
     return view('elden_comunidad');
+});
+
+Route::get('/elden_inspiracion.blade.php', function () {
+    return view('elden_inspiracion');
+});
+
+Route::get('/elden_productos.blade.php', function () {
+    return view('elden_productos');
 });
 
 Route::get('/esdla_comunidad.blade.php', function () {
