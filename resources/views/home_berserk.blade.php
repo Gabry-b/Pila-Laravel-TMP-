@@ -199,6 +199,16 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+                <img src="noticias/berserk/c2.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">¿No sabes donde conseguir el Manga de Kentaro Miura? Te recomendamos los mejores sitios donde adquirirlos</h5>
+                  <p class="card-text">Ya sean tiendas online o tiendas físicas, te recomendamos los mejores sitios donde conseguir esta obra magna</p>
+                  <a href="berserk_productos.blade.php" class="btn btn-primary">Leer más</a>
+                </div>
+              </div>
+        </div>
     </div>
   </div>
 </div>
