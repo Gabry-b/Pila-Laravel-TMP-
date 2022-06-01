@@ -53,11 +53,11 @@
                 <div class="perfil-usuario-portada">
                     <div class="perfil-usuario-avatar">
                         <button type="button" class="boton-avatar">
-                            <p>{!! $perfil->imagen_perfil !!}</p>
+                            <img src="{{ asset('storage').'/'.$perfil->imagen_perfil }}" alt="">
                         </button>
                     </div>
                     <button type="button" class="boton-portada">
-                        <p>{!! $perfil->imagen_fondo !!}</p>
+                        <img src="{{ asset('storage').'/'.$perfil->imagen_fondo }}" alt="">
                     </button>
                 </div>
             </div>
