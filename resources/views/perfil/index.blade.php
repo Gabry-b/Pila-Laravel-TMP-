@@ -59,7 +59,7 @@
                         </button>
                     </div>
                     <button type="button" class="boton-portada">
-                        <img src="{{ asset('storage').'/'.$perfil->imagen_fondo }}" alt="">
+                        <img style="width: 50%" src="{{ asset('storage').'/'.$perfil->imagen_fondo }}" alt="">
                     </button>
                 </div>
             </div>
