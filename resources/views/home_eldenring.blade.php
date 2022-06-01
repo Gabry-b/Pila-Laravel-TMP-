@@ -172,18 +172,28 @@
     <!--CURIOSIDADES-->
     <div class="prueba" id="destacadas" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
       <div class="container-md p-5">
-        
+
         <div class="row pt-5" id="TITLES_ELD">
             <h3 class="text-center pb-5 pt-5 h1">QUIZÁ TE PUEDA INTERESAR...</h3>
         </div>
     <div>
+      <div class="col-sm">
+        <div class="card w-100 card-border mb-5">
+            <img src="noticias/elden/c3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">¡Juega a las obras que inspiraron a Miyazaki!</h5>
+              <p class="card-text">Conoce (y juega) a los juegos retro que inspiraron a Hidetaka Miyazaki para crear sus videojuegos de la saga Souls</p>
+              <a href="elden_inspiracion.html" class="btn btn-primary">Leer más</a>
+            </div>
+        </div>
+    </div>
         <div class="col-sm">
             <div class="card w-100 card-border mb-5">
                 <img src="noticias/elden/c1.jpg" class="card-img-top" alt="">
                 <div class="card-body">
                   <h5 class="card-title">¡Únete a la comunidad Elden Ring!</h5>
                   <p class="card-text">¡Álzate, Sin Luz! Únete a nuestro canal de Discord donde podrás disfrutar de la comunidad para diversas actividades</p>
-                  <a href="elden_comunidad.blade.php" class="btn btn-primary">Leer más</a>
+                  <a href="elden_comunidad.html" class="btn btn-primary">Leer más</a>
                 </div>
               </div>
         </div>
@@ -191,21 +201,11 @@
             <div class="card w-100 card-border mb-5">
                 <img src="IMAGES_ELDEN/BIG_ANIMATION2.GIF" class="card-img-top" alt="">
                 <div class="card-body">
-                  <h5 class="card-title">Se detecta drift en el DualSense de PS5</h5>
-                  <p class="card-text">¿Te has comprado una flamante PlayStation 5, pero ves como el personaje va solo? No te preocupes, no es por tu culpa.</p>
-                  <a href="noticiadestacada2.blade.php" class="btn btn-primary">Leer más</a>
+                  <h5 class="card-title">TOP 5 tiendas donde conseguir las claves al mejor precio para jugar a Elden Ring</h5>
+                  <p class="card-text">Te recomendamos el TOP 5 de las tiendas online donde conseguir Elden Ring para PC al mejor precio, ¡No te lo pierdas!</p>
+                  <a href="elden_productos.html" class="btn btn-primary">Leer más</a>
                 </div>
               </div>
-        </div>
-        <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-                <img src="IMAGES_ELDEN/ELDEN_MONSTER.gif" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Lo último sobre Nintendo Switch Pro</h5>
-                  <p class="card-text">Tras muchísimos rumores, falsas esperanzas, y una vorágine de rumorología sin fuente fiable, ahora parece que sí tenemos ante nosotros los primeros detalles de la que sería la segunda generación de Nintendo Switch</p>
-                  <a href="noticiadestacada3.htblade.phpml" class="btn btn-primary">Leer más</a>
-                </div>
-            </div>
         </div>
     </div>
   </div>
