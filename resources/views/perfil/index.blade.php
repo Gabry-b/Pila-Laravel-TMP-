@@ -41,7 +41,7 @@
             <li class="nav-item navhover2"><a class="nav-link" href="contacta.blade.php"><img src="navimg/contactlogo.svg" width="80px"></a></li>
             <li class="nav-item navhover2"><a class="nav-link" href="login.blade.php"><img src="navimg/loginsignin_logo.svg" width="110px"></a></li>
             @auth
-            <li class="nav-item navhover2"><a class="nav-link" href="perfil.blade.php"><img src="navimg/perfil_logo.svg" width="50px"></a></li>
+            <li class="nav-item navhover2"><a class="nav-link" href="/index"><img src="navimg/perfil_logo.svg" width="50px"></a></li>
             @endauth
           </ul>
         </div>

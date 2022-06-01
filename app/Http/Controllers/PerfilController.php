@@ -94,7 +94,7 @@ class PerfilController extends Controller
      * @param  \App\Models\Perfil  $perfil
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Perfil $perfil)
+    public function destroy($id)
     {
         //
     }
@@ -111,7 +111,7 @@ class PerfilController extends Controller
         }
         Perfil::insert($datosPerfil); 
 
-        
+        return view ('/index');
 
         
         
