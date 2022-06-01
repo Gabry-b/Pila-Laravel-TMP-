@@ -19,7 +19,7 @@
         <!--NAV-->
         <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eleventh navbar example">
           <div class="container-fluid">
-              <a class="navbar-brand mr-auto navhover2" href="home.html"><img src="img/logoMW.svg"></a>
+              <a class="navbar-brand mr-auto navhover2" href="home.blade.php"><img src="img/logoMW.svg"></a>
               <button class="navbar-toggler bg-light" 
                       type="button" 
                       data-bs-toggle="collapse" 
