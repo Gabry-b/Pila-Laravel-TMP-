@@ -272,23 +272,26 @@
 <!--NEWSLETTER-->
 <!--Footer-->
 <section class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
-  <div id="footer" class="p-5">
-      <div class="container card card-border2 w-100 pt-5">
-        <div class="row row-cols-md-2 justify-content-md-center">
-          <div class="col text-center">
-            <h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
-          </div>
+<div id="footer" class="p-5">
+    <div class="container card card-border2 w-100 pt-5">
+      <div class="row row-cols-md-2 justify-content-md-center">
+        <div class="col text-center">
+          <h2>SUSCRÍBETE A NUESTRA NEWSLETTER</h2>
         </div>
-        <div class="row justify-content-md-center py-5">
-          <div class="col text-center font-weight-light">
-            <p>¿Aún no te hemos BOMBARDEADO con información? Suscribete a nuestra newsletter y recibe todas las noticias antes que nadie sobre el mundo medieval</p>
-            <p><input type="text" name="email" style="width: 30%; padding: 5px 5px" placeholder="introduce tu correo. Ejemplo: jacinto@gmail.com"></p>
-            <p><button class="btn btn-lg rounded-pill btn-primary w-20  p-3 shadow-sm font-weight-bold">Let's go!</button></p>
-          </div>
+      </div>
+      <div class="row justify-content-md-center py-5">
+        <div class="col text-center font-weight-light">
+          <p>¿Aún no te hemos BOMBARDEADO con información? Suscribete a nuestra newsletter y recibe todas las noticias antes que nadie sobre el mundo medieval</p>
+          <form id="form" action="{{ route('newsletter.crear') }}" method="post" enctype="multipart/form-data">
+          @csrf
+            <p><input type="text" name="emaiL" id="emaiL" style="width: 30%; padding: 5px 5px" placeholder="Introduce tu correo. Ejemplo: jacinto@gmail.com"></p>
+            <p><button type="submit" class="btn btn-lg rounded-pill btn-primary w-20  p-3 shadow-sm font-weight-bold" action="{{ route('send-email') }}">Let's go!</button></p>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
         <!--SEPARADOR-->
         <section class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
         <div id="separator">
