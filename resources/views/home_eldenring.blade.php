@@ -172,7 +172,7 @@
     <!--CURIOSIDADES-->
     <div class="prueba" id="destacadas" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
       <div class="container-md p-5">
-
+        
         <div class="row pt-5" id="TITLES_ELD">
             <h3 class="text-center pb-5 pt-5 h1">QUIZÁ TE PUEDA INTERESAR...</h3>
         </div>
@@ -183,7 +183,7 @@
             <div class="card-body">
               <h5 class="card-title">¡Juega a las obras que inspiraron a Miyazaki!</h5>
               <p class="card-text">Conoce (y juega) a los juegos retro que inspiraron a Hidetaka Miyazaki para crear sus videojuegos de la saga Souls</p>
-              <a href="elden_inspiracion.html" class="btn btn-primary">Leer más</a>
+              <a href="elden_inspiracion.blade.php" class="btn btn-primary">Leer más</a>
             </div>
         </div>
     </div>
@@ -193,7 +193,7 @@
                 <div class="card-body">
                   <h5 class="card-title">¡Únete a la comunidad Elden Ring!</h5>
                   <p class="card-text">¡Álzate, Sin Luz! Únete a nuestro canal de Discord donde podrás disfrutar de la comunidad para diversas actividades</p>
-                  <a href="elden_comunidad.html" class="btn btn-primary">Leer más</a>
+                  <a href="elden_comunidad.blade.php" class="btn btn-primary">Leer más</a>
                 </div>
               </div>
         </div>
@@ -203,7 +203,7 @@
                 <div class="card-body">
                   <h5 class="card-title">TOP 5 tiendas donde conseguir las claves al mejor precio para jugar a Elden Ring</h5>
                   <p class="card-text">Te recomendamos el TOP 5 de las tiendas online donde conseguir Elden Ring para PC al mejor precio, ¡No te lo pierdas!</p>
-                  <a href="elden_productos.html" class="btn btn-primary">Leer más</a>
+                  <a href="elden_productos.blade.php" class="btn btn-primary">Leer más</a>
                 </div>
               </div>
         </div>
