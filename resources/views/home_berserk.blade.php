@@ -181,26 +181,6 @@
         </div>
         <div class="col-sm">
             <div class="card w-100 card-border mb-5">
-                <img src="img/card2.png" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Se detecta drift en el DualSense de PS5</h5>
-                  <p class="card-text">¿Te has comprado una flamante PlayStation 5, pero ves como el personaje va solo? No te preocupes, no es por tu culpa.</p>
-                  <a href="noticiadestacada2.blade.php" class="btn btn-primary">Leer más</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
-                <img src="img/card3.png" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Lo último sobre Nintendo Switch Pro</h5>
-                  <p class="card-text">Tras muchísimos rumores, falsas esperanzas, y una vorágine de rumorología sin fuente fiable, ahora parece que sí tenemos ante nosotros los primeros detalles de la que sería la segunda generación de Nintendo Switch</p>
-                  <a href="noticiadestacada3.blade.php" class="btn btn-primary">Leer más</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm">
-            <div class="card w-100 card-border mb-5">
                 <img src="noticias/berserk/c2.png" class="card-img-top" alt="">
                 <div class="card-body">
                   <h5 class="card-title">¿No sabes donde conseguir el Manga de Kentaro Miura? Te recomendamos los mejores sitios donde adquirirlos</h5>
