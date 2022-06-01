@@ -81,10 +81,8 @@
                 <p><b>Controles (configurables en la parte superior derecha)</b></p>
                 <p><b>Enter:</b> Start</p>
                 <p><b>← ↑ →</b> Moverse</p>
-                <p><b>A:</b> Z</p>
-                <p><b>B:</b> X</p>
-                <p><b>X:</b> A</p>
-                <p><b>Y:</b> S</p>
+                <p><b>A o Z:</b> Saltar</p>
+                <p><b>X o S:</b> Atacar</p>
                 </div>
               
                 <!--SEGUNDO JUEGO-->
@@ -102,10 +100,8 @@
                   <p><b>Controles (configurables en la parte superior derecha)</b></p>
                   <p><b>Enter:</b> Start</p>
                   <p><b>← ↑ →</b> Moverse</p>
-                  <p><b>A:</b> Z</p>
-                  <p><b>B:</b> X</p>
-                  <p><b>X:</b> A</p>
-                  <p><b>Y:</b> S</p>
+                  <p><b>X:</b> Saltar</p>
+                  <p><b>S:</b> Atacar</p>
                   </div>
 
                   <!--TERCER JUEGO-->
@@ -124,10 +120,8 @@
                   <p><b>Controles (configurables en la parte superior derecha)</b></p>
                   <p><b>Enter:</b> Start</p>
                   <p><b>← ↑ →</b> Moverse</p>
-                  <p><b>A:</b> Z</p>
-                  <p><b>B:</b> X</p>
-                  <p><b>X:</b> A</p>
-                  <p><b>Y:</b> S</p>
+                  <p><b>Z:</b> Saltar</p>
+                  <p><b>X:</b> Atacar</p>
                   </div>
                   <div class="text-center  col-lg-12 col-md-12 col-sm-12 p-5 display-7 lead" id="noticias">
                     Y hasta aquí nuestra sección de videojuegos que inspiraron al gran Miyazaki, esperamos desde Medieval World que disfrutéis de ellos ;)
