@@ -103,7 +103,7 @@
 <!--NEWSLETTER-->
 <!--Footer-->
 @auth
-<section class="prueba" style="background-image: url('IMAGES_GUTS/background.jpg');">
+<section class="prueba" style="background-image: url('IMAGES_ELDEN/Elden-Ring-Wallpaper.jpg');">
   <div id="footer" class="p-5">
       <div class="container card card-border2 w-100 pt-5">
         <div class="row row-cols-md-2 justify-content-md-center">
